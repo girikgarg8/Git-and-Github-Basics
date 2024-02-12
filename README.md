@@ -61,3 +61,17 @@ From the screenshot above, we conclude that README.md, which was previously bein
 8. `commit`: git commit is a particular version of the project. It captures a snapshot of the project's staged changes and creates a version out of it.
 
 9. `git commit` : registers staging changes to a commit. 
+
+10. `git log`: shows the commit history of the repository. If you want to exit out of git log prompt, press `q`.
+
+11. `git restore <path to file>` : two different usecases, explained below:
+
+Unstaged Changes: If you have made changes to a file in your working directory but have not yet staged those changes, you can use `git restore` to discard those changes and revert the file to the state, it was in the last committed version.
+
+Staged Changes: If you have already staged changes (using `git add`) but want to remove them from the working directory, it cannot be simply done with `git restore` . We need to use `git restore --staged` .
+
+Doing this will move the changes from staging area to working directory.
+
+Now we can discard the changes from the working directort by using `git restore <filename>` as before.
+
+12. `git diff <commit-id1> <commit-id2>` : Considering commit-id1 to be the previous commit and commit-id2 to be the further commit, it tells the difference between the two commits in terms of additions and deletions of code.
