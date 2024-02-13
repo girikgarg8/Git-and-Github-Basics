@@ -127,5 +127,3 @@ Handling merge conflicts in VS Code:
 After resolving the merge conflict, we need to create a merge commit :
 
 ![Git-merge-commit-after-resolving-conflict](./Git-merge-commit-after-resolving-conflict.png)
-
-
