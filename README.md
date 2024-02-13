@@ -20,7 +20,7 @@ Github competes with Gitlab, Bitbucket etc.
 
 There are three different areas in Git: working area/directory, staging area/index and local repository. Let's learn about them:
 
-2. `Working Area` : There can be a bunch of files that are not currently handled by git. It means that changes done or to be done in those files are not maanged by git yet. A file which is in working area is considered to be not in the staging area. When we do git status and we see a bunch of 'untracked files' then these are actually called to be in the working area.
+2. `Working Area` : There can be a bunch of files that are not currently handled by git. It means that changes done or to be done in those files are not managed by git yet. A file which is in working area is considered to be not in the staging area. When we do git status and we see a bunch of 'untracked files' then these are actually called to be in the working area.
 
 3. `Staging area/index` : What all files are going to be a part of the next version that we will create. This staging area is the place where git knows what changes will be done from the last version to the next version.
 
@@ -81,3 +81,38 @@ See example below:
 ![Git-diff](./Git-diff.png)
 
 From this screenshot, we can see the code additions (denoted by + sign, highlighted in green) between the two commits.
+
+Let's understand what `remote` is in Git: Remote in git refers to a connection or direct link between the local repository and the remote repository. Although we can use any name for this connection, 'origin' is a common convention. Remote is always used to establish communication between different repositories.
+
+Let's do a breakdown of the command `git remote add origin https://github.com/girikgarg8/Git-and-Github-Basics`, here origin is the name of remote. The link 'https://github.com/girikgarg8/Git-and-Github-Basics' is the link to the remote.  The syntax is `git remote add <remote name> <link to remote>`.
+
+13. `git remote show` : lists down all the remote connection names.
+
+14. `git remote rm <name of remote> `: this command deletes a remote connection
+
+15. `git remote rename <oldname> <newname>`  : this command renames the remote connection
+
+16. `git pull <remote name> <branch name>` : downloads latest changes from the branch of the mentioned remote in the local repository. As an example, consider `git pull origin master`. 
+
+**Recommended practice to do**
+
+```
+    - Make the changes
+    - git add <file>
+    - git commit
+    - git pull
+    - git push
+```
+
+Always git pull before pushing, to avoid merge conflicts.
+
+**Let's talk about merge conflicts**
+
+**What is a merge conflict and why does it happen?**
+
+Git can often resolve differences between branches and merge them automatically. Usually, the changes are on different lines, or even in different files, which makes the merge simple for computers to understand. However, sometimes there are competing changes that Git can't resolve without your help. Often, merge conflicts happen when people make different changes to the same line of the same file, or when one person edits a file and another person deletes the same file.
+
+**How can we resolve merge conflicts?**
+
+The merge conflicts can either be resolved through the terminal, or through the GUI with the help of an IDE like Visual Studio Code. See the demonstration below: 
+
