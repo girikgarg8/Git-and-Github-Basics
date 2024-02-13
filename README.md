@@ -116,3 +116,10 @@ Git can often resolve differences between branches and merge them automatically.
 
 The merge conflicts can either be resolved through the terminal, or through the GUI with the help of an IDE like Visual Studio Code. See the demonstration below: 
 
+![Git-merge-conflict](./Git-merge-conflict.png)
+
+![Git-handling-merge-conflict-in-VS-Code](./Git-handling-merge-conflict-in-VS-Code.png)
+
+![Git-merge-commit-after-resolving-conflict](./Git-merge-commit-after-resolving-conflict.png)
+
+This is a sample change from remote repository.
