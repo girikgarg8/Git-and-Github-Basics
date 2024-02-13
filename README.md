@@ -81,3 +81,5 @@ See example below:
 ![Git-diff](./Git-diff.png)
 
 From this screenshot, we can see the code additions (denoted by + sign, highlighted in green) between the two commits.
+
+This is a sample change from remote repository.
