@@ -72,7 +72,7 @@ Staged Changes: If you have already staged changes (using `git add`) but want to
 
 Doing this will move the changes from staging area to working directory.
 
-Now we can discard the changes from the working directort by using `git restore <filename>` as before.
+Now we can discard the changes from the working directory by using `git restore <filename>` as before.
 
 12. `git diff <commit-id1> <commit-id2>` : Considering commit-id1 to be the previous commit and commit-id2 to be the further commit, it tells the difference between the two commits in terms of additions and deletions of code.
 
